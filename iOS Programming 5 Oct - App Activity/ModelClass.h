@@ -10,4 +10,10 @@
 
 @interface ModelClass : NSObject
 
+@property (strong, nonatomic) NSString * myName;
+
+@property (strong, nonatomic) NSString * myRed;
+@property (strong, nonatomic) NSString * myBlue;
+@property (strong, nonatomic) NSString * myGreen;
+
 @end

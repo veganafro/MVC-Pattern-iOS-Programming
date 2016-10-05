@@ -7,15 +7,41 @@
 //
 
 #import "ViewController.h"
+#import "SignInViewController.h"
+#import "ModelClass.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
+@property (strong, nonatomic) ModelClass * model;
 
 @end
 
 @implementation ViewController
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    SignInViewController * signInVC = segue.destinationViewController;
+    signInVC.model = self.model;
+
+} //end prepareForSegue
+
+- (IBAction) cancelSignIn:(UIStoryboardSegue *) segue {
+    NSLog(@"cancelSignIn: in ViewController");
+
+} //end cancelSignIn
+
+- (IBAction) completeSignIn: (UIStoryboardSegue *) segue {
+    NSLog(@"completeSignIn: in ViewController");
+
+    self.greetingLabel.text = self.model.myName;
+    
+    self.greetingLabel.backgroundColor = [UIColor colorWithRed:[self.model.myRed intValue] / 255.0 green:[self.model.myGreen intValue] / 255.0 blue:[self.model.myBlue intValue] / 255.0 alpha:1];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.model = [[ModelClass alloc] init];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

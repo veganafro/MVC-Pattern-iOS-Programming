@@ -15,6 +15,8 @@
 		CE2DB9691DA58F340094B85F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DB9671DA58F340094B85F /* LaunchScreen.storyboard */; };
 		CE2DB9741DA58F350094B85F /* iOS_Programming_5_Oct___App_ActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2DB9731DA58F350094B85F /* iOS_Programming_5_Oct___App_ActivityTests.m */; };
 		CE2DB97F1DA58F350094B85F /* iOS_Programming_5_Oct___App_ActivityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2DB97E1DA58F350094B85F /* iOS_Programming_5_Oct___App_ActivityUITests.m */; };
+		CE2DB98E1DA58FA20094B85F /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2DB98D1DA58FA20094B85F /* SignInViewController.m */; };
+		CE2DB9911DA590100094B85F /* ModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2DB9901DA590100094B85F /* ModelClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		CE2DB97A1DA58F350094B85F /* iOS Programming 5 Oct - App ActivityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS Programming 5 Oct - App ActivityUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2DB97E1DA58F350094B85F /* iOS_Programming_5_Oct___App_ActivityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "iOS_Programming_5_Oct___App_ActivityUITests.m"; sourceTree = "<group>"; };
 		CE2DB9801DA58F350094B85F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2DB98C1DA58FA20094B85F /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		CE2DB98D1DA58FA20094B85F /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		CE2DB98F1DA590100094B85F /* ModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelClass.h; sourceTree = "<group>"; };
+		CE2DB9901DA590100094B85F /* ModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,13 @@
 		CE2DB9581DA58F340094B85F /* iOS Programming 5 Oct - App Activity */ = {
 			isa = PBXGroup;
 			children = (
-				CE2DB95C1DA58F340094B85F /* AppDelegate.h */,
-				CE2DB95D1DA58F340094B85F /* AppDelegate.m */,
+				CE2DB9621DA58F340094B85F /* Main.storyboard */,
 				CE2DB95F1DA58F340094B85F /* ViewController.h */,
 				CE2DB9601DA58F340094B85F /* ViewController.m */,
-				CE2DB9621DA58F340094B85F /* Main.storyboard */,
+				CE2DB98F1DA590100094B85F /* ModelClass.h */,
+				CE2DB9901DA590100094B85F /* ModelClass.m */,
+				CE2DB98C1DA58FA20094B85F /* SignInViewController.h */,
+				CE2DB98D1DA58FA20094B85F /* SignInViewController.m */,
 				CE2DB9651DA58F340094B85F /* Assets.xcassets */,
 				CE2DB9671DA58F340094B85F /* LaunchScreen.storyboard */,
 				CE2DB96A1DA58F340094B85F /* Info.plist */,
@@ -118,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				CE2DB95A1DA58F340094B85F /* main.m */,
+				CE2DB95D1DA58F340094B85F /* AppDelegate.m */,
+				CE2DB95C1DA58F340094B85F /* AppDelegate.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -276,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2DB98E1DA58FA20094B85F /* SignInViewController.m in Sources */,
 				CE2DB9611DA58F340094B85F /* ViewController.m in Sources */,
+				CE2DB9911DA590100094B85F /* ModelClass.m in Sources */,
 				CE2DB95E1DA58F340094B85F /* AppDelegate.m in Sources */,
 				CE2DB95B1DA58F340094B85F /* main.m in Sources */,
 			);
@@ -430,6 +442,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeremymuhia.iOS-Programming-5-Oct---App-Activity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -442,6 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jeremymuhia.iOS-Programming-5-Oct---App-Activity";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

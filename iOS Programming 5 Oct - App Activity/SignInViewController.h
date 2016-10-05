@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ModelClass;
 
 @interface SignInViewController : UIViewController
+
+@property (strong, nonatomic) ModelClass * model;
 
 @end
