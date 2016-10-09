@@ -13,7 +13,6 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *greetingLabel;
-@property (strong, nonatomic) ModelClass * model;
 
 @end
 
@@ -35,7 +34,7 @@
 
     self.greetingLabel.text = self.model.myName;
     
-    self.greetingLabel.backgroundColor = [UIColor colorWithRed:[self.model.myRed intValue] / 255.0 green:[self.model.myGreen intValue] / 255.0 blue:[self.model.myBlue intValue] / 255.0 alpha:1];
+    self.greetingLabel.backgroundColor = [UIColor colorWithRed:[self.model.myRed intValue] / 255.0 green:[self.model.myGreen intValue] / 255.0 blue:[self.model.myBlue intValue] / 255.0 alpha:0.5];
 }
 
 - (void)viewDidLoad {

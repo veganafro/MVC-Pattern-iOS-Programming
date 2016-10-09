@@ -10,4 +10,10 @@
 
 @implementation ModelClass
 
+//@synthesize myName;
+//
+//@synthesize myRed;
+//@synthesize myBlue;
+//@synthesize myGreen;
+
 @end
